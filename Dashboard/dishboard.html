@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <section class="firstSec">
+    <div class="sidebar">
+
+        <h2>Finance Dashboard UI</h2>
+        <h4>Menu</h4>
+           <ul class="ul">
+            <li>Dashboard</li>
+            <li>Analytics </li>
+            
+            <li>Update </li>
+            
+           </ul>
+        
+        <h4>General</h4>
+        <ul>
+            <li>Help Disk</li>
+            
+            <li>Setting</li>
+        </ul>
+
+
+    </div>
+
+
+
+    <main class="main">
+    <header class="nav">
+    <div>
+        <i class="fas fa-bars toggle-btn" onclick="toggleSidebar()"></i>
+        <span>Overview</span>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" placeholder="Search...">
+        <i class="fas fa-moon toggle-btn" onclick="toggleDark()"></i>
+    </div>
+</header>
+        <div class="paragraph">
+            <p>Good Morning,......</p>
+            <p>Here an overview of your financial health</p>
+            <div class="day">
+                <select id="role">
+                    <option value="student">This Month</option>
+                    <option value="admin">Today</option>
+                </select>
+            </div>
+        </div>
+        <div class="Cardin">
+            <div class="card">
+        <h4>Total Balance</h4>
+        <h3>$15,006</h3>
+    </div>
+
+    <div class="card">
+        <h4>Income</h4>
+        <h3>$3,406</h3>
+    </div>
+
+    <div class="card">
+        <h4>Expenses</h4>
+        <h3>$2,476</h3>
+    </div>
+        </div>
+        <div class="chartMenu">
+
+ <div class="chartMenu">
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="info">
+        <h3>My Card</h3>
+
+        <div class="credit-card">
+            <p>**** **** **** 1234</p>
+            <p>ABC </p>
+        </div>
+    </div>
+
+</main>
+    </section>
+    <section class="secondSec"></section>
+    
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
